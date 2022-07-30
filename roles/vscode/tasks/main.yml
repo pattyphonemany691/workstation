@@ -1,0 +1,4 @@
+- name: Add settings.json file
+  copy:
+    src: settings.json
+    dest: "~/Library/Application\ Support/Code/User/settings.json"

@@ -1,0 +1,47 @@
+# Runs after https://gitlab.appian-stratus.com/appian/prod/dev-setup/-/blob/main/setup-mac.sh
+
+- name: get brew prefix
+  command: brew --prefix
+  register: brew_prefix
+
+- name: Get zsh path
+  command: which zsh
+  register: zsh_path
+  changed_when: False
+- name: Get current shell
+  command: echo $SHELL
+  register: shell
+- name: Change shell to zsh
+  command: chsh -s "{{ zsh_path.stdout }}"
+  when: '"zsh" not in shell.stdout'
+
+# https://ohmyz.sh/#install
+- name: Check if oh-my-zsh is installed
+  stat:
+    path: ~/.oh-my-zsh
+  register: oh_my_zsh_installed
+- name: Install oh-my-zsh
+  when: not oh_my_zsh_installed.stat.exists
+  block:
+  - name: Download oh-my-zsh install tool
+    get_url:
+      url: https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+      dest: ~/install.sh
+      mode: '0644'
+  - name: Install oh-my-zsh
+    command: ~/install.sh --unattended
+    register: zsh_installation
+  - name: Clean up oh-my-zsh install tool
+    file:
+      path: ~/install.sh
+      state: absent
+
+- name: Update ~/.zshrc
+  blockinfile:
+    create: no
+    dest: ~/.zshrc
+    content: |
+      eval "$({{ brew_prefix.stdout }}/bin/brew shellenv)"
+      source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+      source ~/.gvm/scripts/gvm
+      source ~/repo/clusters/scripts/sso-credentials

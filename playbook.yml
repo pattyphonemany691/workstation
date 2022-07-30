@@ -1,4 +1,20 @@
 - hosts: localhost
-
+  pre_tasks:
+    - name: Install custom tools from homebrew
+      block:
+        - command: brew bundle install
+          register: brew_status
+        - debug: var=brew_status.stdout_lines
+      tags:
+        - brew
+    # - name: debug
+    #   block:
+    #     - debug:
+    #         msg: 
+    #   tags:
+    #     - debug
   roles:
+    - { role: zsh, tags: ['zsh']}
+    - { role: vscode, tags: ['vscode']}
+
 
