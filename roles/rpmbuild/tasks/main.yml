@@ -1,2 +1,0 @@
-- name: Install rpm-build
-  yum: name=rpm-build state=present

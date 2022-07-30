@@ -1,3 +1,0 @@
-java_version: 1.8.0_151
-java_rpm: jdk-8u151-linux-x64.rpm
-java_url: http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/{{ java_rpm }}

@@ -1,3 +1,0 @@
-%wheel ALL=(ALL)       ALL
-Defaults env_keep += "JAVA_HOME"
-{{ local_username }} ALL=(ALL) NOPASSWD:ALL
