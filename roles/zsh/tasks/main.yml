@@ -45,3 +45,9 @@
       source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
       source ~/.gvm/scripts/gvm
       source ~/repo/clusters/scripts/sso-credentials
+
+- name: Configure environment variables for zsh
+  template:
+    src: zshenv
+    dest: ~/.zshenv
+    mode: u=rw,g=r,o=

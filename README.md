@@ -9,3 +9,6 @@
 
 ## Themes
 * Apple Terminal: https://github.com/arcticicestudio/nord-terminal-app
+
+## TODO:
+- Add https://www.logitech.com/en-us/software/options.html
