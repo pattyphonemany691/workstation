@@ -1,2 +1,5 @@
 - name: Disable pager for git branch
   git_config: scope=global name=pager.branch value=false
+
+- name: Disable pager for git grep
+  git_config: scope=global name=pager.grep value=false

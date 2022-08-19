@@ -1,4 +1,5 @@
 {
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.shell.osx": "/bin/zsh",
 }

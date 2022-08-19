@@ -10,7 +10,7 @@
     # - name: debug
     #   block:
     #     - debug:
-    #         msg: 
+    #         msg:
     #   tags:
     #     - debug
   roles:

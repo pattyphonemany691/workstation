@@ -51,3 +51,9 @@
     src: zshenv
     dest: ~/.zshenv
     mode: u=rw,g=r,o=
+
+- name: Configure tmux
+  template:
+    src: tmuxconf
+    dest: ~/.tmux.conf
+    mode: u=rw,g=r,o=
