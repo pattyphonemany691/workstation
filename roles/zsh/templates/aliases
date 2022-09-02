@@ -1,0 +1,2 @@
+alias update-kubeconfig="~/repo/clusters/scripts/update-kubeconfig"
+alias cat="/opt/homebrew/bin/bat --style=plain"

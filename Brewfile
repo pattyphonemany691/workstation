@@ -19,11 +19,18 @@ cask "font-hack-nerd-font"
 cask "rectangle"
 # password manager
 cask "bitwarden"
-# enable mouse scroll differently than trackpad. https://github.com/ther0n/UnnaturalScrollWheels Alternative to https://pilotmoon.com/scrollreverser/
-cask "unnaturalscrollwheels"
+# enable mouse scroll differently than trackpad. https://mousefix.org/
+# alternatives: https://github.com/ther0n/UnnaturalScrollWheels, https://pilotmoon.com/scrollreverser/
+cask "mouse-fix"
 # enable a calendar in menu bar. https://www.mowglii.com/itsycal/
 cask "itsycal"
 # view timezones in menu bar. https://github.com/n0shake/clocker
 cask "clocker"
 # screenshot/markup alternative. https://flameshot.org/
-cask "flameshot"
+# cask "flameshot"
+# properly uninstall software. https://freemacsoft.net/appcleaner/
+cask "appcleaner"
+# clipboard manager. https://maccy.app/
+cask "maccy"
+# window manager. https://alt-tab-macos.netlify.app/
+cask "alt-tab"

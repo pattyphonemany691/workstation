@@ -52,6 +52,12 @@
     dest: ~/.zshenv
     mode: u=rw,g=r,o=
 
+- name: Configure aliases zsh
+  template:
+    src: aliases
+    dest: ~/.oh-my-zsh/custom/aliases.zsh
+    mode: u=rw,g=r,o=
+
 - name: Configure tmux
   template:
     src: tmuxconf
