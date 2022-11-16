@@ -3,10 +3,16 @@ Assumes you're using a mac.
 These are my preferences. You're not required to use these.
 
 # Usage
-* Run all plays: `ansible-playbook playbook.yml`
-* Run specific play: `ansible-playbook playbook.yml --tag <tagname>`
+* Run all plays: `ansible-playbook playbook.yml --ask-become-pass`
+* Run specific play: `ansible-playbook playbook.yml --ask-become-pass --tag <tagname>`
 
 # Customizations
+
+## Chrome Apps
+Support for logitech mouse forward/back buttons: https://support.google.com/mail/thread/127551228/gmail-windowed-desktop-app-doesn-t-support-mouse-back-forward-buttons?hl=en
+1. Add new chrome application
+1. Specify keyboard shortcut
+
 ## PowerLevel Font
 * https://github.com/romkatv/powerlevel10k/blob/master/font.md
 * https://github.com/microsoft/vscode/issues/81497
@@ -21,6 +27,10 @@ These are my preferences. You're not required to use these.
 ## VSCode
 * Configurations are stored it a settings.json file that gets copied after installation.
 
+## Alfred
+* [Replace Spotlight Search with Alfred](https://www.alfredapp.com/help/troubleshooting/cmd-space/)
+
+
 # Reminders
 * Enable notifications for Chrome in System Preferences > Notifications & Focus
   * Enable for calendar, chat, mail
@@ -30,5 +40,5 @@ These are my preferences. You're not required to use these.
 * Add ssh key to cache/keychain: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 * Add [Logitech Support](https://www.logitech.com/en-us/software/logi-options-plus.html). Future: https://hulry.com/logitech-mx-master-3-review/
 
-# TODO
-* ?? Keyboard maestro vs hammerspoon vs alfred?
+
+

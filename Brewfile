@@ -3,6 +3,9 @@
 # cat cli tool alternative. https://formulae.brew.sh/formula/bat
 brew "bat"
 
+# see go processes on system. https://github.com/google/gops
+# brew "gops"
+
 # https://github.com/romkatv/powerlevel10k
 tap "romkatv/powerlevel10k"
 brew "romkatv/powerlevel10k/powerlevel10k"
@@ -14,7 +17,7 @@ cask "font-hack-nerd-font"
 # https://www.warp.dev/ requires account creation
 #cask "warp"
 # spotlight alternative. https://www.alfredapp.com/
-#cask "alfred"
+cask "alfred"
 # snap windows. https://rectangleapp.com/
 cask "rectangle"
 # password manager
@@ -26,11 +29,21 @@ cask "mouse-fix"
 cask "itsycal"
 # view timezones in menu bar. https://github.com/n0shake/clocker
 cask "clocker"
-# screenshot/markup alternative. https://flameshot.org/
-# cask "flameshot"
-# properly uninstall software. https://freemacsoft.net/appcleaner/
+# screenshot/markup alternative. https://flameshot.org/brew
+cask "flameshot"
+# properly uninstall software. https://freemacsoft.net/appcleaner/. 
+# Maybe not necessary if you can just brew uninstall.
 cask "appcleaner"
 # clipboard manager. https://maccy.app/
 cask "maccy"
 # window manager. https://alt-tab-macos.netlify.app/
 cask "alt-tab"
+# menubar hider
+# https://github.com/dwarvesf/hidden doesn't handle the notch well; apps that overflow into the notch are not visible
+# If you have too many menu bar items, not everything shows up. Use this to collapse things you can't hide by default.
+# cask "hiddenbar"
+cask "bartender"
+# text expansion. for simple text replacement, use the keyboard text replacement feature on macos.
+# cask "espanso"
+# diff tool
+cask "meld"

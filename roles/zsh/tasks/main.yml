@@ -8,12 +8,9 @@
   command: which zsh
   register: zsh_path
   changed_when: False
-- name: Get current shell
-  command: echo $SHELL
-  register: shell
 - name: Change shell to zsh
-  command: chsh -s "{{ zsh_path.stdout }}"
-  when: '"zsh" not in shell.stdout'
+  user: name="{{ ansible_user_id }}" shell="{{  zsh_path.stdout }}"
+  become: true
 
 # https://ohmyz.sh/#install
 - name: Check if oh-my-zsh is installed
@@ -40,7 +37,10 @@
   blockinfile:
     create: no
     dest: ~/.zshrc
-    content: |
+    # Brew path needs to execute before loading omz plugins
+    # https://github.com/ohmyzsh/ohmyzsh/discussions/10737
+    insertbefore: "^# Which plugins would you like to load?"
+    block: |
       eval "$({{ brew_prefix.stdout }}/bin/brew shellenv)"
       source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
       source ~/.gvm/scripts/gvm
