@@ -14,6 +14,9 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
 
+# https://k9scli.io/topics/install/
+brew "k9s"
+
 # https://www.warp.dev/ requires account creation
 #cask "warp"
 # spotlight alternative. https://www.alfredapp.com/
@@ -47,3 +50,4 @@ cask "bartender"
 # cask "espanso"
 # diff tool
 cask "meld"
+

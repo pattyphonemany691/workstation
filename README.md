@@ -9,9 +9,11 @@ These are my preferences. You're not required to use these.
 # Customizations
 
 ## Chrome Apps
-Support for logitech mouse forward/back buttons: https://support.google.com/mail/thread/127551228/gmail-windowed-desktop-app-doesn-t-support-mouse-back-forward-buttons?hl=en
+[Support for logitech mouse forward/back buttons](https://support.google.com/mail/thread/127551228/gmail-windowed-desktop-app-doesn-t-support-mouse-back-forward-buttons?hl=en) requires additional setup.
 1. Add new chrome application
-1. Specify keyboard shortcut
+1. Specify keyboard shortcut. See image below
+
+![Chrome App Logitech Mouse Back/Forward Button Support](./logitech-mouse-settings.png)
 
 ## PowerLevel Font
 * https://github.com/romkatv/powerlevel10k/blob/master/font.md
