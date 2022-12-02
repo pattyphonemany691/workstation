@@ -22,6 +22,11 @@ These are my preferences. You're not required to use these.
 ## Themes
 * Apple Terminal: https://github.com/arcticicestudio/nord-terminal-app
 
+## JetBrains
+By switching to `zsh`, environment variables in `.zshenv` are not automatically loaded when you bring up IntelliJ or GoLand. In Linux, we figured out how to [override the startup](https://github.com/appian/cloud-tools/blob/ubuntu-workstation/workstation/roles/zsh/templates/jetbrains-idea.zsh.desktop).
+
+To workaround the fact that environment variables aren't loaded automatically, update the default run configuration and manually update the User Environment Variables.
+
 ## Goland
 * Show control characters in Goland: https://stackoverflow.com/questions/9868796/how-to-display-hidden-characters-by-default-zero-width-space-ie-8203
 * Disable code folding: https://www.jetbrains.com/help/go/code-folding-settings.html

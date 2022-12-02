@@ -23,8 +23,9 @@ brew "k9s"
 cask "alfred"
 # snap windows. https://rectangleapp.com/
 cask "rectangle"
-# password manager
+# password managers
 cask "bitwarden"
+cask "keepassxc"
 # enable mouse scroll differently than trackpad. https://mousefix.org/
 # alternatives: https://github.com/ther0n/UnnaturalScrollWheels, https://pilotmoon.com/scrollreverser/
 cask "mouse-fix"
