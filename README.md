@@ -46,6 +46,4 @@ To workaround the fact that environment variables aren't loaded automatically, u
   * goland: https://www.jetbrains.com/help/go/terminal-emulator.html
 * Add ssh key to cache/keychain: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 * Add [Logitech Support](https://www.logitech.com/en-us/software/logi-options-plus.html). Future: https://hulry.com/logitech-mx-master-3-review/
-
-
-
+* The artifactory task will fail in dev-setup because your username in Stratus is not the same as your appian user name. Comment it out.

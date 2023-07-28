@@ -26,6 +26,7 @@ cask "rectangle"
 # password managers
 cask "bitwarden"
 cask "keepassxc"
+cask "1password"
 # enable mouse scroll differently than trackpad. https://mousefix.org/
 # alternatives: https://github.com/ther0n/UnnaturalScrollWheels, https://pilotmoon.com/scrollreverser/
 cask "mouse-fix"
@@ -51,4 +52,3 @@ cask "bartender"
 # cask "espanso"
 # diff tool
 cask "meld"
-
