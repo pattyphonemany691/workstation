@@ -28,14 +28,15 @@ cask "bitwarden"
 cask "keepassxc"
 cask "1password"
 # enable mouse scroll differently than trackpad. https://mousefix.org/
+# update: Logitech has an OOTB solution
 # alternatives: https://github.com/ther0n/UnnaturalScrollWheels, https://pilotmoon.com/scrollreverser/
-cask "mouse-fix"
+# cask "mouse-fix"
 # enable a calendar in menu bar. https://www.mowglii.com/itsycal/
 cask "itsycal"
 # view timezones in menu bar. https://github.com/n0shake/clocker
-cask "clocker"
+# cask "clocker"
 # screenshot/markup alternative. https://flameshot.org/brew
-cask "flameshot"
+# cask "flameshot"
 # properly uninstall software. https://freemacsoft.net/appcleaner/. 
 # Maybe not necessary if you can just brew uninstall.
 cask "appcleaner"
