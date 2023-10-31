@@ -42,7 +42,7 @@
     insertbefore: "^# Which plugins would you like to load?"
     block: |
       eval "$({{ brew_prefix.stdout }}/bin/brew shellenv)"
-      source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+      source $(brew --prefix)/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
       source ~/.gvm/scripts/gvm
       source ~/repo/clusters/scripts/sso-credentials
 
